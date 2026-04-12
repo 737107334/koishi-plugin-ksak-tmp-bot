@@ -1,0 +1,57 @@
+{
+  "name": "koishi-plugin-ksak-tmp",
+  "version": "1.21.3",
+  "description": "阿K传媒机器人TruckersMP查询插件 - 支持玩家查询、服务器状态、路况信息、Steam打折通知等功能\nQQ作者: 737107334\n欧卡交流群：681138670",
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "truckersmp",
+    "gametool",
+    "ets2",
+    "tmp",
+    "euro-truck-simulator-2",
+    "american-truck-simulator",
+    "steam"
+  ],
+  "homepage": "https://github.com/737107334/koishi-plugin-ksak-tmp-bot",
+  "bugs": {
+    "url": "https://github.com/737107334/koishi-plugin-ksak-tmp-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/737107334/koishi-plugin-ksak-tmp-bot.git"
+  },
+  "license": "MIT",
+  "author": "阿K传媒",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "js-md5": "^0.8.3"
+  },
+  "peerDependencies": {
+    "koishi": "^4.18.7"
+  },
+  "typings": "lib/index.d.ts",
+  "koishi": {
+    "service": {
+      "required": [
+        "database"
+      ],
+      "optional": [
+        "puppeteer"
+      ]
+    }
+  }
+}
